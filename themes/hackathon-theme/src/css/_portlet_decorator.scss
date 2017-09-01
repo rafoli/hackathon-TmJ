@@ -1,10 +1,5 @@
 .portlet-decorate .portlet-content {
-	@include border-top-radius(4px);
-	@include border-right-radius(4px);
-	@include border-bottom-radius(4px);
-	@include border-left-radius(4px);
-	background: #FFF;
-	border: none;
+	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.05);
 	padding: 20px;
 }
 
