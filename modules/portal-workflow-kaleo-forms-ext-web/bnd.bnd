@@ -1,0 +1,4 @@
+Bundle-Name: Liferay Portal Workflow Kaleo Forms Ext Web
+Bundle-SymbolicName: com.liferay.portal.workflow.kaleo.forms.ext.web
+Bundle-Version: 1.0.0
+Web-ContextPath: /portal-workflow-kaleo-forms-ext-web
