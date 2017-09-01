@@ -4,7 +4,7 @@
 <%
 long userId = user.getUserId();
 
-List<Roles> roles = UserLocalServiceUtil.getUserRoles(userId, -1, -1);
+List<Role> roles = UserLocalServiceUtil.getUserRoles(userId, -1, -1);
 
 for (Roles role : roles) {
 	if(role.getName() == "triador"){
