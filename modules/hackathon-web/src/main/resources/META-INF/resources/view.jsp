@@ -5,10 +5,10 @@
 long userId = user.getUserId();
 
 List<Role> roles = UserLocalServiceUtil.getUserRoles(userId, -1, -1);
-
+String forwardedURL = "";
 for (Role role : roles) {
-	if(role.getName() == "triador"){
-		response.sendRedirect("http://192.168.109.23:8080/group/control_panel/manage?p_p_id=com_liferay_portal_workflow_task_web_portlet_MyWorkflowTaskPortlet&p_p_lifecycle=0&p_p_state=maximized");
+	if (role.getName().equals("triador")) {
+	 		forwardedURL = "http://192.168.109.23:8080/group/control_panel/manage?p_p_id=com_liferay_portal_workflow_task_web_portlet_MyWorkflowTaskPortlet&p_p_lifecycle=0&p_p_state=maximized";
 	}
 }
 %>
@@ -18,6 +18,12 @@ for (Role role : roles) {
 <div>
 
 <script type="text/javascript">
+
+var forwardedURL = '<%= forwardedURL %>';
+
+if(forwardedURL.length > 0){
+	location.href = forwardedURL;
+}
 
 countWords = function(words, text) {
 
