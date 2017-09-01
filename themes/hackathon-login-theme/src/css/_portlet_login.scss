@@ -1,0 +1,11 @@
+.portlet-login {
+    margin: 0 auto;
+
+    @include respond-to(desktop) {
+        width: 40%;
+    }
+
+    .portlet-icon-back, h2 {
+        display: none;
+    }
+}

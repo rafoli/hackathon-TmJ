@@ -23,6 +23,9 @@ body:not(.portal-popup) {
 #banner {
 	padding: 20px 0;
 	position: relative;
+	display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
 
 	a:active, a:hover, a:focus {
 		text-decoration: none;
@@ -153,6 +156,9 @@ body:not(.portal-popup) {
 	}
 
 	.user-personal-bar {
+
+		display: none;
+
 		@include sm {
 			position: absolute;
 			right: 20px;
@@ -279,6 +285,10 @@ body:not(.portal-popup) {
 			top: -2px;
 		}
 	}
+}
+
+.site-navigation {
+	display: none;
 }
 
 // Top Menu
