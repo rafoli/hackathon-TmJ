@@ -6,7 +6,7 @@ long userId = user.getUserId();
 
 List<Role> roles = UserLocalServiceUtil.getUserRoles(userId, -1, -1);
 
-for (Roles role : roles) {
+for (Role role : roles) {
 	if(role.getName() == "triador"){
 		response.sendRedirect("http://192.168.109.23:8080/group/control_panel/manage?p_p_id=com_liferay_portal_workflow_task_web_portlet_MyWorkflowTaskPortlet&p_p_lifecycle=0&p_p_state=maximized");
 	}
