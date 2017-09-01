@@ -22,7 +22,7 @@ public class LoginStepDefinitions {
 
 	@When("^I fill the (-?[^\"]*) and (-?[^\"]*) I will be logged$")
 	public void i_fill_the_login_and_password_i_will_be_logged(String emailAddress, String password) {
-		loginPage.clickOnSignIn();
+//		loginPage.clickOnSignIn();
 		loginPage.fillEmailAddressField(emailAddress);
 		loginPage.fillPasswordField(password);
 		loginPage.clickOnSignInOfTheModal();
