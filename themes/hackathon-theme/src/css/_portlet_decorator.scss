@@ -26,3 +26,25 @@ $portlet-color: #bec2d2;
 .portlet:hover > .portlet-content-editable, .portlet.focus > .portlet-content-editable {
 	border: 1px solid transparent;
 }
+
+.lexicon-icon.lexicon-icon-search {
+	fill: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+	.controls-visible .portlet-topper {
+		display: none;
+	}
+
+	.controls-visible .portlet-content-editable {
+		border-color: transparent;
+	}
+
+	.navbar-collapse {
+		box-shadow: none;
+	}
+
+	.lfr-ddm-field-group.lfr-ddm-field-group-inline.field-wrapper {
+		margin-top: 10px;
+	}
+}

@@ -26,7 +26,7 @@ body:not(.portal-popup) {
 #banner {
 	padding: 20px 0;
 	position: relative;
-	background: $justice-primary-color;
+	background: linear-gradient(    to left,     #3383fb, #2c3d84   );
 
 	a:active, a:hover, a:focus {
 		text-decoration: none;
