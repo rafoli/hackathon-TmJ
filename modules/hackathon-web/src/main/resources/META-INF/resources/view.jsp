@@ -1,4 +1,6 @@
 <%@ include file="/init.jsp" %>
+<%@page import="com.liferay.portal.kernel.model.Role" %>
+<%@page import="com.liferay.portal.kernel.service.UserLocalServiceUtil" %>
 <%
 long userId = user.getUserId();
 
