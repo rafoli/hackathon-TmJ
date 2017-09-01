@@ -279,6 +279,10 @@ body:not(.portal-popup) {
 	}
 }
 
+.navbar-toggle {
+	display: none;
+}
+
 // Custom Button
 .btn {
 
@@ -289,7 +293,9 @@ body:not(.portal-popup) {
 		top: 0;
 
 		&:hover {
-			box-shadow: 0 0px 5px 1px rgba(255, 255, 255, 0.65), 0 2px 10px 1px $btn-primary-bg;
+			box-shadow: 0 2px 7px 0px #4dffdc;
+			background-color: #17ab8e;
+			border-color: #1abc9c;
 			top: -2px;
 		}
 	}
