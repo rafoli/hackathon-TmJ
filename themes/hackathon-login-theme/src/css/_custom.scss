@@ -7,8 +7,16 @@
 	font-family: 'Roboto Slab', serif;
 }
 
+body, html {
+	height: 100%;
+}
+
 body:not(.portal-popup) {
-	background-color: $bg-color;
+	background-image:
+		linear-gradient(
+			to top right, 
+			#52d4ef, #4033fb
+		);
 }
 
 .container-fluid-1280 .row {

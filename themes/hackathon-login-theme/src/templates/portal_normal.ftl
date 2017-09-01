@@ -25,14 +25,14 @@
 		<div class="row">
 			<div class="navbar-header" id="heading">
 				<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-					<img alt="${logo_description}" height="64" src="${images_folder}/hammer-jus.png" width="64" />
+					<img alt="${logo_description}" height="120" src="${images_folder}/logo.png" />
 				</a>
 
-				<#if show_site_name>
+				<#--  <#if show_site_name>
 					<span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
 						${site_name}
 					</span>
-				</#if>
+				</#if>  -->
 
 				<#if is_setup_complete>
 					<button aria-controls="navigation" aria-expanded="false" class="collapsed navbar-toggle" data-target="#navigationCollapse" data-toggle="collapse" type="button">

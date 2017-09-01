@@ -349,13 +349,13 @@ body:not(.portal-popup) {
 .control-menu {
 	
 	&.control-menu-level-1 {
-		background: #332119;
+		background: #2c3d84;
 		background-image: none;
 	}
 }
 
 .product-menu .sidebar-header {
-	background: #332119 !important;
+	background: #2c3d84 !important;
 }
 
 @include media-query(null, $screen-sm-max) {
