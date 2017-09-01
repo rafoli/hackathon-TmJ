@@ -315,21 +315,21 @@ body:not(.portal-popup) {
 	}
 }
 
-// Custom Button
+.has-control-menu #wrapper {
+	margin-top: 0 !important;
+}
+
 // Custom Button
 .btn {
 
 	&.btn-primary {
 
 		transition: all .2s ease-in;
-		position: relative;
-		top: 0;
 
 		&:hover {
 			box-shadow: 0 2px 7px 0px #4dffdc;
 			background-color: #17ab8e;
 			border-color: #1abc9c;
-			top: -2px;
 		}
 	}
 }
@@ -356,6 +356,8 @@ body:not(.portal-popup) {
 	&.control-menu-level-1 {
 		background: #2c3d84;
 		background-image: none;
+
+		display: none;
 	}
 }
 

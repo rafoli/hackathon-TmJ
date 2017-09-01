@@ -1,4 +1,4 @@
-$portlet-color: #C7C1BD;
+$portlet-color: #bec2d2;
 
 .portlet-decorate .portlet-content {
 	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.05);
@@ -17,4 +17,12 @@ $portlet-color: #C7C1BD;
 
 .portlet:hover > .portlet-content-editable, .portlet.focus > .portlet-content-editable {
 	border-color: $portlet-color;
+}
+
+.portlet:hover > .portlet-topper, .portlet.focus > .portlet-topper {
+	display: none;
+}
+
+.portlet:hover > .portlet-content-editable, .portlet.focus > .portlet-content-editable {
+	border: 1px solid transparent;
 }
