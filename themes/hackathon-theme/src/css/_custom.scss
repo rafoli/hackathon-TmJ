@@ -273,10 +273,52 @@ body:not(.portal-popup) {
 	margin: 15px 0;
 }
 
+#banner #navigationCollapse .navbar-blank > li:hover > a, #banner #navigationCollapse .navbar-blank > li.hover > a, #banner #navigationCollapse .navbar-blank > li.active > a, #banner #navigationCollapse .navbar-blank > li .dropdown-menu .active > a{
+	color: rgba(255, 255, 255, 0.59);
+}
+
+.kaleo-forms-admin-portlet {
+
+	.management-bar-container,
+	table thead,
+	td.lfr-checkbox-column,
+	td.lfr-id-column,
+	td.lfr-modified-date-column,
+	td.lfr-entry-action-column,
+	td.lfr-entry-action-column {
+		display: none;
+	}
+
+	table td {
+		padding-left: 14px !important;
+	}
+
+	.container-fluid-1280 {
+		padding: 0;
+	}
+
+	.management-bar.management-bar-default .container-fluid-1280 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.card {
+		box-shadow: none;
+	}
+
+	.portlet-icon-back ~ .portlet-content-container {
+
+	
+		.management-bar-container {
+			display: block;
+		}
+	}
+}
+
 // Custom Button
 .btn {
 
-	&.btn-primary {
+	&.btn-primary:not(.btn-bottom-right) {
 
 		transition: all .2s ease-in;
 		position: relative;
@@ -292,6 +334,15 @@ body:not(.portal-popup) {
 .site-logo-img {
 	transform: scale(0.7);
 	margin-left: -30px;
+	float: left;
+}
+
+.user-icon-default {
+	display: none;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #fff;
 }
 
 // Top Menu
@@ -304,7 +355,7 @@ body:not(.portal-popup) {
 }
 
 .product-menu .sidebar-header {
-	background: #332119;
+	background: #332119 !important;
 }
 
 @include media-query(null, $screen-sm-max) {

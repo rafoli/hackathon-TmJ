@@ -1,8 +1,20 @@
+$portlet-color: #C7C1BD;
+
 .portlet-decorate .portlet-content {
 	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.05);
 	padding: 20px;
+	border-radius: 2px;
 }
 
 .portlet-barebone .portlet-content {
 	padding: 0;
+}
+
+.portlet-topper {
+	background-color: $portlet-color;
+    border-color: $portlet-color;
+}
+
+.portlet:hover > .portlet-content-editable, .portlet.focus > .portlet-content-editable {
+	border-color: $portlet-color;
 }
